@@ -67,7 +67,7 @@ try{
     // if module exists means that we are inside a define 
     // statement
     if (module && module.exports) {
-        module.exports = WebPageManagerPlugin;
+        module.exports = LoadingPlugin;
     }
 }catch(e){
 
