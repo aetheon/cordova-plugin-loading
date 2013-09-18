@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="PluginName"
+    version="0.0.1">
+
+    <name></name>
+    <description></description>
+    <author></author>
+    <keywords></keywords>
+
+    <engines>
+        <engine name="cordova" version=">=2.2.0" />
+    </engines>
+
+
+    <!-- assets to be copied -->
+    <asset src="www/Loading.js" target="plugins/Loading.js" />
+
+    <!-- 
+      android platform
+      -->
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="plugins">
+            <plugin name="PLUGIN" value="com.custom.PLUGIN.PLUGIN"/>
+        </config-file>
+
+        <source-file src="src/android/com/custom/PLUGIN/PLUGIN.java" target-dir="src/com/custom/PLUGIN/" /> 
+
+    </platform>
+
+</plugin>
